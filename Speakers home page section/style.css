@@ -1,0 +1,354 @@
+/*font-family: 'Source Sans Pro', sans-serif;*/
+
+/*general. REIKS ISTRINTI SUDEJUS BENDRAI SU VISA GRUPE*/
+body{
+    background-color:black;
+  }
+
+.wrapper3{
+  width:90%;
+  margin:0 auto;
+}
+
+.blog-caption a{
+  text-decoration: none;
+}
+
+.blog-caption{
+  font-family: 'Source Sans Pro', sans-serif;
+	color: #ffffff;
+  text-align: center;
+  font-weight: semibold;
+  font-size: 26px;
+}
+
+.blog-caption h3{
+font-size: 12px;
+font-weight: semibold;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/*blog section*/
+
+.blog-section div {
+  height: 130px;
+  background-color: #f2f2f2;
+  margin-bottom:10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.blog-section div h3 {
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.blog-section div p {
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+#blog-1 {
+  background-image: url("https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+#blog-2{
+  background-image: url("https://images.pexels.com/photos/374023/pexels-photo-374023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+#blog-3{
+  background-image: url("https://images.pexels.com/photos/756914/pexels-photo-756914.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.readmore{
+  margin-top: 25px;
+}
+
+.readmore a{
+    text-decoration: none;
+    color: #44EEEB;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: semibold;
+    font-size: 12px;
+}
+
+
+/*BlOG section @media*/
+@media only screen and (min-width: 768px){
+
+  .wrapper3{
+    width:70%;
+    margin:0 auto;
+  }
+
+  .blog-caption{
+    text-align: left;
+  }
+  .blog-caption a{
+    text-decoration: none;
+  }
+
+  .blog-caption h2{
+    font-size: 40px;
+  }
+
+  .blog-caption h3{
+    font-size: 20px;
+  }
+
+  .blog-section{
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+
+  }
+
+  #blog-1{
+    grid-row: 1/3;
+    height: 400px;
+  }
+
+  #blog-1 p {
+    padding:15px;
+  }
+
+  #blog-1 h3{
+    padding: 260px 15px 0;
+  }
+
+  #blog-2{
+    height: 195px;
+    margin-bottom:0;
+  }
+
+  #blog-2 p {
+      padding:15px;
+  }
+
+  #blog-2 h3{
+    padding-top: 60px;
+  }
+
+
+  #blog-3{
+    height: 195px;
+  }
+
+  #blog-3 p {
+    padding:15px;
+  }
+
+  #blog-3 h3{
+    padding-top: 60px;
+  }
+
+ .blog-section div {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.80));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:100%;
+  }
+
+   .blog-section div{
+     cursor: pointer;
+     -webkit-transition: 0.3s ease-in-out,
+     -webkit-transform 0.3s ease-in-out;
+   	  -moz-transition:  0.3s ease-in-out,
+     -moz-transform 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out,
+     transform 0.3s ease-in-out, ;
+   }
+
+   .blog-section div:hover {
+     transform: scale(1.05);
+   }
+
+  .readmore a{
+    text-decoration: none;
+    font-size: 14pt;
+  }
+
+  .readmore a:visited {
+    color: cyan;
+  }
+
+  .readmore a:hover {
+    color: lightgreen;
+  }
+
+}
+
+
+
+/*SPEAKERS*/
+.speakers-caption{
+  font-family: 'Source Sans Pro', sans-serif;
+	color: #ffffff;
+  text-align: center;
+  font-size: 26px;
+}
+
+
+.speakers-section {
+	margin: 0 auto;
+
+}
+.speakers-section a{
+  text-decoration: none;
+}
+
+.speakers-grid {
+	margin: 10px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+  min-width: 100%;
+
+}
+
+.speakers-grid:after {
+	clear: both;
+}
+
+.speakers-grid:after, .speakers-box:before {
+	display: table;
+}
+
+.speakers-grid li {
+	width:100%;
+	height: 350px;
+	display: inline-block;
+	margin: 10px auto;
+
+}
+
+.speakers-box {
+	min-width: 100%;
+	min-height: 100%;
+	position: relative;
+	cursor: pointer;
+  border-radius: 10px;
+}
+
+.speakers-img-1 {
+	background: linear-gradient( rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.50)), /* bottom, image */
+	url(images/speaker1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.speakers-img-2 {
+	background: linear-gradient( rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.50)), /* bottom, image */
+	url(images/speaker3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.speakers-img-3 {
+	background: linear-gradient( rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.50)), /* bottom, image */
+	url(images/speaker2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.speakers-img-4 {
+	background: linear-gradient( rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.50)), /* bottom, image */
+	url(images/speaker4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.speakers-info {
+  padding-top: 110px;
+	position: relative;
+	width: inherit;
+	height: inherit;
+}
+
+.speakers-info h3 {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	margin: 0 30px;
+	padding: 100px 0 0 0;
+	line-height: 1.2;
+}
+
+.speakers-info p {
+	font-family: Source Sans Pro , sans-serif;
+	color: #fff;
+	padding: 4px 5px;
+	margin: 0 30px;
+	font-size: 16px;
+	line-height: 2;
+}
+
+
+/*SPEAKER section @media*/
+
+@media only screen and (min-width: 768px){
+
+  .speakers-grid{
+    min-width:100%;
+    margin: 0 auto;
+  }
+
+  .speakers-caption h2{
+    text-align: left;
+    padding: 30px auto 10px  0;
+    font-size: 40px;
+
+  }
+
+
+  .speakers-grid li {
+	  display: inline-block;
+    width: 24%;
+  }
+  .speakers-box {
+
+    min-height:600px;
+    font-size: 16px;
+	  cursor: pointer;
+    -webkit-transition: 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+	  -moz-transition:  0.3s ease-in-out,
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out,
+    transform 0.3s ease-in-out, ;
+  }
+
+  .speakers-box:hover {
+	  transform: scale(1.05);
+  }
+.speakers-box h3{
+  margin-top: 20vh;
+}
+
+/*
+  display: flex;
+  flex-flow: row wrap;
+    grid-template-columns:repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    height:50%;
+    grid-template-columns:repeat(4, 1fr);
+    margin: 30px auto 50px auto;
+    }
+ */
+
+}/*END of speakers @media*/
